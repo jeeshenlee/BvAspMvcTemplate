@@ -1,0 +1,165 @@
+﻿@media all and (max-width: 1200px) {
+
+}
+
+@media all and (max-width: 1000px) {
+
+}
+
+@media all and (max-width: 500px) {
+    .btn {
+        font-size: 13px;
+    }
+}
+
+/* ======================== Layout */
+.margin-0px-auto {
+    margin: 0 auto;
+}
+
+.margin-0px {
+    margin: 0px;
+}
+
+.margin-top-5px {
+    margin-top: 5px;
+}
+
+.margin-top-10px {
+    margin-top: 10px;
+}
+
+.margin-top-15px {
+    margin-top: 15px;
+}
+
+.margin-top-20px {
+    margin-top:20px
+}
+
+.margin-top-30px {
+    margin-top: 30px;
+}
+
+.margin-top-60px {
+    margin-top: 60px;
+}
+
+.margin-top-100px {
+    margin-top: 100px;
+}
+
+.margin-bottom-5px {
+    margin-bottom: 5px;
+}
+
+.margin-bottom-10px {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-15px {
+    margin-bottom: 15px;
+}
+
+.margin-bottom-30px {
+    margin-bottom: 30px;
+}
+
+.margin-bottom-60px {
+    margin-bottom: 60px;
+}
+
+.margin-bottom-100px {
+    margin-bottom: 100px;
+}
+
+.padding-0px {
+    padding: 0px;
+}
+
+.padding-5px {
+    padding: 5px;
+}
+
+.padding-10px {
+    padding: 10px;
+}
+
+.padding-15px {
+    padding: 15px;
+}
+
+.padding-top-5px {
+    padding-top: 5px;
+}
+
+.padding-top-15px {
+    padding-top: 15px;
+}
+
+.padding-bottom-5px {
+    padding-bottom: 5px;
+}
+
+.padding-bottom-15px {
+    padding-bottom: 15px;
+}
+
+.full-width {
+    width: 100%;
+    display: block;
+}
+
+.full-height {
+    height: 100%;
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+/* ======================== Looks */
+.round-border {
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.white-background {
+    background-color: #ffffff;
+}
+
+.transparent-background {
+    background-image: none;
+    background-color: transparent !important;    
+}
+
+/* ======================== Fonts */
+.white-font {
+    color: #ffffff;
+}
+
+.font-size-75 {
+    font-size: 85%;
+}
+
+.font-size-125 {
+    font-size: 125%;
+}
+
+.font-size-150 {
+    font-size: 150%;
+}
+
+.font-size-200 {
+    font-size: 200%;
+}
+
+.text-center img {
+    margin: auto;
+}
+	
