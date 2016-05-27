@@ -1,0 +1,18 @@
+﻿<!-- Open Graph data -facebook -->
+<meta property="og:title" content="@ViewBag.Title" />
+<meta property="og:url" content="@HttpContext.Current.Request.Url.AbsoluteUri" />
+<meta property="og:description" content="@ViewBag.Description" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="@ViewBag.Image" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="@HttpContext.Current.Request.Url.AbsoluteUri">
+<meta name="twitter:title" content="@ViewBag.Title">
+<meta name="twitter:description" content="@ViewBag.Description">
+<meta name="twitter:image" content="@ViewBag.Image">
+
+<!-- Google+ -->
+<meta itemprop="name" content="@ViewBag.Title">
+<meta itemprop="description" content="@ViewBag.Description">
+<meta itemprop="image" content="@ViewBag.Image">
