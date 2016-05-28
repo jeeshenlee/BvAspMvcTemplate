@@ -137,6 +137,7 @@
     <Content Include="Content\fuelux.css" />
     <Content Include="Content\fuelux.min.css" />
     <Content Include="Content\Images\Favicon.png" />
+    <Content Include="Content\Images\Meta-Image.png" />
     <Content Include="Content\toastr.css" />
     <Content Include="Content\toastr.min.css" />
     <Content Include="favicon.ico" />
