@@ -1,12 +1,47 @@
-﻿<!DOCTYPE html>
+﻿@{
+    ViewBag.MetaUrl = HttpContext.Current.Request.Url.AbsoluteUri;
+
+    if (ViewBag.MetaTitle == null)
+    {
+        ViewBag.MetaTitle = System.Configuration.ConfigurationManager.AppSettings["METATAG_TITLE"];
+    }
+    if (ViewBag.MetaDescription == null)
+    {
+        ViewBag.MetaDescription = System.Configuration.ConfigurationManager.AppSettings["METATAG_DESCRIPTION"];
+    }
+    if (ViewBag.MetaKeywords == null)
+    {
+        ViewBag.MetaKeywords = System.Configuration.ConfigurationManager.AppSettings["METATAG_KEYWORDS"];
+    }
+    if (ViewBag.MetaImage == null)
+    {
+        ViewBag.MetaImage = System.Configuration.ConfigurationManager.AppSettings["METATAG_IMAGE"];
+    }
+    if (ViewBag.MetaAuthor == null)
+    {
+        ViewBag.MetaAuthor = System.Configuration.ConfigurationManager.AppSettings["METATAG_AUTHOR"];
+    }
+    if (ViewBag.MetaPublisher == null)
+    {
+        ViewBag.MetaPublisher = System.Configuration.ConfigurationManager.AppSettings["METATAG_PUBLISHER"];
+    }
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>@ViewBag.Title - BvAspMvcTemplate</title>
+    <title>@ViewBag.MetaTitle | BvAspMvcTemplate</title>
+    <meta name="description" content="@ViewBag.MetaDescription">
+    <meta name="keywords" content="@ViewBag.MetaKeywords" />
+    <meta name="author" content="@ViewBag.MetaAuthor">
+    <meta name="publisher" content="@ViewBag.MetaPublisher">
 
     @RenderSection("meta", required: false)
+
+    @{ Html.RenderPartial("~/Views/Shared/PVHeaderSocialMediaTag.cshtml"); }
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fuelux/3.8.0/css/fuelux.min.css">

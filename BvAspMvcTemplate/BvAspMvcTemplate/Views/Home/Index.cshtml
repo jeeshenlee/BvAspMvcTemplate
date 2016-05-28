@@ -1,5 +1,6 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.MetaTitle = "Overwrite My Title";
+    ViewBag.MetaDescription = "Overwrite Description";
 }
 
 <div class="jumbotron">
@@ -24,25 +25,15 @@
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        
-
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <div class="col-lg-12">
+        <h2>For User</h2>
+    
+        <h3>1. How to set your website meta tags, e.g. title, descriptions, keywords etc</h3>
+        <p>To set a site wide meta tag, navigate to Web.Config. Change those value in appSettings > METATAG_xxx e.g. METATAG_TITLE</p>
+        <p>To overwrite the site wide meta tag, under each page. Delacare variable ViewBag.Metaxxx e.g ViewBag.MetaTitle</p>
+        <br />
+        <h2>For Contributor</h2>
+        <h3>1. How to create Visual Studio Template</h3>
+        <p>Here's the step by step guide to create template out of this project - https://msdn.microsoft.com/en-us/library/tsyyf0yh.aspx </p>
     </div>
 </div>
